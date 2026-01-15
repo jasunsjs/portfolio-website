@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Footer from "@/components/Footer";
 import { Playfair_Display, Poppins } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
@@ -22,19 +21,19 @@ export const metadata: Metadata = {
     default: siteConfig.name,
     template: `%s | ${siteConfig.name}`,
   },
-  description: siteConfig.greeting.subtitle,
+  description: siteConfig.greeting.subtitles[0],
   icons: {
     icon: "/favicon.jpg",
   },
   openGraph: {
     title: siteConfig.name,
-    description: siteConfig.greeting.subtitle,
+    description: siteConfig.greeting.subtitles[0],
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
     title: siteConfig.name,
-    description: siteConfig.greeting.subtitle,
+    description: siteConfig.greeting.subtitles[0],
   },
 };
 
@@ -48,7 +47,6 @@ export default function RootLayout({
       <body className={`${poppins.variable} ${playfair.variable} font-sans antialiased`}>
         <Navbar />
         <main>{children}</main>
-        <Footer />
       </body>
     </html>
   );
