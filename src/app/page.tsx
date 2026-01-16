@@ -104,7 +104,7 @@ export default function Home() {
             href="https://github.com/jasunsjs"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center justify-center rounded-lg bg-(--color-accent) px-8 py-2 text-sm text-(--color-contrast) transition hover:-translate-y-1"
+            className="inline-flex items-center justify-center rounded-lg bg-(--color-contrast) px-8 py-2 text-sm text-(--color-contrast) transition hover:-translate-y-1"
           >
             {siteConfig.cta.work} <span className="ml-2">&gt;</span>
           </Link>
