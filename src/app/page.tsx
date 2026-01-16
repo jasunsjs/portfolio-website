@@ -50,7 +50,19 @@ export default function Home() {
               About Me
             </SectionHeading>
             <p className="text-sm text-[color:var(--color-text)] md:text-base">
-              {siteConfig.about.content}
+              {`I'm a CS + AI student at UWaterloo and a passionate software engineer with 3+ years
+                of experience. I love learning new tools and technologies to develop
+                cool things in any field - web, backend, AI/ML, Cloud, etc.`}
+            </p>
+
+            <p className="text-sm text-[color:var(--color-text)] md:text-base">
+              {`My biggest passions outside of tech are by far music and basketball. I'm a freelance r&b/jazz saxophonist
+                on the side (hit me up for gigs!), and I've been an avid hooper my whole life.`}
+            </p>
+
+            <p className="text-sm text-[color:var(--color-text)] md:text-base">
+              {`But I'm curious about just anything in this world today that's full of wonder. 
+                So let's connect - we'll certainly have something in common.`}
             </p>
           </div>
           <div className="grid gap-4 md:grid-cols-2">
@@ -108,7 +120,7 @@ export default function Home() {
             {siteConfig.headings.contact}
           </SectionHeading>
           <p className="text-sm text-[color:var(--color-text)] md:text-base">
-            Feel free to reach out!
+            Let's do something cool.
           </p>
         </div>
         <div className="mt-10 grid gap-6 md:grid-cols-[1fr_0.6fr]">

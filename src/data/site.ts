@@ -51,8 +51,6 @@ export const siteConfig = {
     { label: "LinkedIn", href: "https://www.linkedin.com/in/jason-sun0/", icon: "linkedin" },
   ] satisfies SocialLink[],
   about: {
-    content:
-      "'Do I need to be liked? Absolutely not. I like to be liked. I enjoy being liked. I have to be liked. But it's not like this compulsive need like my need to be praised.' Whatever the situation or conflict might be, it can almost always be traced back to this need. His conference room characters, fun runs, and copious amounts of office parties are all aimed at his need to be praised.",
     resumeUrl: "/",
   },
   headings: {
@@ -73,31 +71,31 @@ export const siteConfig = {
     visible: true,
     items: [
       {
-        company: "Dunder Mifflin",
+        company: "Zomp Inc.",
         companyLogo:
           "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/why-did-steve-carell-leave-the-office-1585597666.jpg?crop=0.563xw:0.844xh;0.287xw,0.128xh&resize=480:*",
-        position: "Regional Manager",
-        time: "March 2020 - May 2020",
+        position: "Software Engineer",
+        time: "Sep 2025 - Dec 2025",
         description:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum",
+          "Worked on oil/gas pipeline analytics software & AWS internal pipeline tools",
       },
       {
-        company: "Dunder Mifflin",
+        company: "Sparklease Inc.",
         companyLogo:
           "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/why-did-steve-carell-leave-the-office-1585597666.jpg?crop=0.563xw:0.844xh;0.287xw,0.128xh&resize=480:*",
-        position: "Regional Manager",
-        time: "March 2020 - May 2020",
+        position: "Full Stack Developer",
+        time: "Jan 2025 - Apr 2025",
         description:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum",
+          "Developed end-to-end features for an online automotive marketplace & built ETL pipelines",
       },
       {
-        company: "Dunder Mifflin",
+        company: "Home Hardware Stores Limited",
         companyLogo:
           "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/why-did-steve-carell-leave-the-office-1585597666.jpg?crop=0.563xw:0.844xh;0.287xw,0.128xh&resize=480:*",
-        position: "Regional Manager",
-        time: "March 2020 - May 2020",
+        position: "Software Developer",
+        time: "May 2024 - Aug 2024",
         description:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum",
+          "Automated test suites & Python internal tools to support ERP system workflows",
       },
     ] satisfies ExperienceItem[],
   },
@@ -115,10 +113,10 @@ export const navigation = [
 
 export const projects = [
   {
-    name: "Dunder Mifflin",
+    name: "BuildBane (Co-founding Engineer)",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum",
-    tech: ["Tech1", "Tech2", "Tech3"],
+      "A platform  that connects entrepreneurs with builders to collaborate on projects and kickstart ideas.",
+    tech: ["Next.js", "TypeScript", "GraphQL", "PostgreSQL", "Prisma ORM", "Redis", "Firebase"],
     images: [
       "/images/projects/buildbane.jpg",
     ],
@@ -126,10 +124,10 @@ export const projects = [
     projectUrl: "",
   },
   {
-    name: "Project 2",
+    name: "Linguistify",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum",
-    tech: ["Tech1", "Tech2", "Tech3"],
+      "AI-powered audio dubbing application using TTS/STT and AI contextual translations to synchronize audio tracks into different languages.",
+    tech: ["React", "JavaScript", "Python", "Flask"],
     images: [
       "/images/projects/linguistify.jpg",
     ],
@@ -137,10 +135,10 @@ export const projects = [
     projectUrl: "/",
   },
   {
-    name: "Project 3",
+    name: "Biquadris",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum",
-    tech: ["Tech1", "Tech2", "Tech3"],
+      "A Tetris-inspired multiplayer game engine with a twist - different levels, special blocks and effects, and unique rotation mechanics.",
+    tech: ["C++"],
     images: [
       "/images/projects/biquadris.jpg",
     ],
