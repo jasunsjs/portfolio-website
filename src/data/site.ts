@@ -42,8 +42,9 @@ export const siteConfig = {
   },
   contact: {
     email: "jasonsunjishen@gmail.com",
-    phone: "4163479816",
+    phone: "416-347-9816",
     countryCode: "+1",
+    location: "Toronto, ON, Canada",
   },
   socials: [
     { label: "GitHub", href: "https://github.com/jasunsjs", icon: "github" },

@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { Icons } from "@/components/icons";
 import WorkTimeline from "@/components/WorkTimeline";
 import ProjectCard from "@/components/ProjectCard";
 import SectionHeading from "@/components/SectionHeading";
@@ -100,10 +101,92 @@ export default function Home() {
 
       <section
         id="contact"
-        className="flex min-h-[90vh] flex-col items-center justify-center px-6 py-12 scroll-mt-28"
+        className="bg-[color:var(--color-secondary)] px-[22vw] pb-55 pt-16 scroll-mt-28"
       >
-        <SectionHeading>{siteConfig.headings.contact}</SectionHeading>
-        <div className="mt-6 w-full max-w-2xl">
+        <div className="mx-auto flex w-full max-w-6xl flex-col items-center gap-6 text-center">
+          <SectionHeading className="text-white text-5xl">
+            {siteConfig.headings.contact}
+          </SectionHeading>
+          <p className="text-sm text-[color:var(--color-text)] md:text-base">
+            Feel free to reach out!
+          </p>
+        </div>
+        <div className="mt-10 grid gap-6 md:grid-cols-[1fr_0.6fr]">
+          <div className="space-y-6 text-base text-[color:var(--color-text)] md:text-base">
+            <div className="flex items-center gap-5">
+              <Icons.mail className="h-8 w-8" />
+              {siteConfig.contact.email}
+            </div>
+            <div className="flex items-center gap-5">
+              <Icons.phone className="h-8 w-8" />
+              {siteConfig.contact.countryCode} {siteConfig.contact.phone}
+            </div>
+            <div className="flex items-center gap-5">
+              <Icons.location className="h-8 w-8" />
+              {siteConfig.contact.location}
+            </div>
+          </div>
+          <div className="space-y-10 text-center">
+            <div>
+              <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[color:var(--color-text)]">
+                Follow Me On Socials
+              </p>
+              <div className="mt-4 flex items-center justify-center gap-8">
+                <a
+                  href="https://linkedin.com"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="text-[color:var(--color-text)] transition hover:text-[color:var(--color-tertiary)]"
+                  aria-label="LinkedIn"
+                >
+                  <Icons.linkedin className="h-12 w-12" />
+                </a>
+                <a
+                  href="https://github.com"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="text-[color:var(--color-text)] transition hover:text-[color:var(--color-tertiary)]"
+                  aria-label="GitHub"
+                >
+                  <Icons.github className="h-12 w-12" />
+                </a>
+                <a
+                  href="https://instagram.com"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="text-[color:var(--color-text)] transition hover:text-[color:var(--color-tertiary)]"
+                  aria-label="Instagram"
+                >
+                  <Icons.instagram className="h-12 w-12" />
+                </a>
+              </div>
+            </div>
+            <div>
+              <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[color:var(--color-text)]">
+                Check Out My Music
+              </p>
+              <div className="mt-4 flex items-center justify-center gap-8">
+                <a
+                  href="https://instagram.com"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="text-[color:var(--color-text)] transition hover:text-[color:var(--color-tertiary)]"
+                  aria-label="Instagram"
+                >
+                  <Icons.instagram className="h-12 w-12" />
+                </a>
+                <a
+                  href="https://youtube.com"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="text-[color:var(--color-text)] transition hover:text-[color:var(--color-tertiary)]"
+                  aria-label="YouTube"
+                >
+                  <Icons.youtube className="h-12 w-12" />
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </div>
