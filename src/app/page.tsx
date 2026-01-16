@@ -133,7 +133,7 @@ export default function Home() {
               </p>
               <div className="mt-4 flex items-center justify-center gap-8">
                 <a
-                  href="https://linkedin.com"
+                  href="https://www.linkedin.com/in/jason-sun0/"
                   target="_blank"
                   rel="noreferrer"
                   className="text-[color:var(--color-text)] transition hover:text-[color:var(--color-tertiary)]"
@@ -142,7 +142,7 @@ export default function Home() {
                   <Icons.linkedin className="h-12 w-12" />
                 </a>
                 <a
-                  href="https://github.com"
+                  href="https://github.com/jasunsjs"
                   target="_blank"
                   rel="noreferrer"
                   className="text-[color:var(--color-text)] transition hover:text-[color:var(--color-tertiary)]"
@@ -151,7 +151,7 @@ export default function Home() {
                   <Icons.github className="h-12 w-12" />
                 </a>
                 <a
-                  href="https://instagram.com"
+                  href="https://www.instagram.com/sjs.jasun/"
                   target="_blank"
                   rel="noreferrer"
                   className="text-[color:var(--color-text)] transition hover:text-[color:var(--color-tertiary)]"
@@ -167,7 +167,7 @@ export default function Home() {
               </p>
               <div className="mt-4 flex items-center justify-center gap-8">
                 <a
-                  href="https://instagram.com"
+                  href="https://www.instagram.com/jasunsaxmusic/"
                   target="_blank"
                   rel="noreferrer"
                   className="text-[color:var(--color-text)] transition hover:text-[color:var(--color-tertiary)]"
@@ -176,7 +176,7 @@ export default function Home() {
                   <Icons.instagram className="h-12 w-12" />
                 </a>
                 <a
-                  href="https://youtube.com"
+                  href="https://www.youtube.com/@sjsjasun"
                   target="_blank"
                   rel="noreferrer"
                   className="text-[color:var(--color-text)] transition hover:text-[color:var(--color-tertiary)]"
