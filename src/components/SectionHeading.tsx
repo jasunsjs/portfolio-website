@@ -10,7 +10,7 @@ type SectionHeadingProps = {
 export default function SectionHeading({ children, className }: SectionHeadingProps) {
   return (
     <h2
-      className={`font-serif text-4xl font-medium text-center text-[color:var(--color-text)] md:text-5xl ${
+      className={`font-serif text-4xl font-medium text-center text-foreground md:text-5xl ${
         className ?? ""
       }`}
     >

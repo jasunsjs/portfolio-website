@@ -11,24 +11,24 @@ export default function WorkTimeline() {
       <div className="mx-auto w-full max-w-6xl px-6">
         <SectionHeading>{siteConfig.headings.experience}</SectionHeading>
         <div className="relative mt-10 pl-6">
-          <div className="absolute left-4 top-0 h-full w-px bg-[color:var(--color-subtext-soft)]" />
+          <div className="absolute left-4 top-0 h-full w-px bg-(--color-subtext-soft)" />
           <ul className="space-y-8">
             {siteConfig.experience.items.map((item, index) => (
               <li
                 key={`${item.company}-${index}`}
                 className="relative ml-10"
               >
-                <div className="rounded-2xl border border-[color:var(--color-subtext-soft)] bg-[color:var(--color-body)] p-6 shadow-[var(--shadow-soft)]">
-                  <p className="text-xs font-semibold uppercase tracking-[0.3em] text-[color:var(--color-tertiary)]">
+                <div className="rounded-2xl border border-(--color-subtext-soft) bg-background p-6 shadow-(--shadow-soft)">
+                  <p className="text-xs font-semibold uppercase tracking-[0.3em] text-(--color-tertiary)">
                     {item.time}
                   </p>
-                  <h3 className="mt-2 text-xl font-semibold text-[color:var(--color-text)]">
+                  <h3 className="mt-2 text-xl font-semibold text-foreground">
                     {item.company}
                   </h3>
-                  <p className="text-sm text-[color:var(--color-text-muted)]">
+                  <p className="text-sm text-(--color-text-muted)">
                     {item.position}
                   </p>
-                  <p className="mt-3 text-sm text-[color:var(--color-subtext)]">
+                  <p className="mt-3 text-sm text-(--color-subtext)">
                     {item.description}
                   </p>
                 </div>
