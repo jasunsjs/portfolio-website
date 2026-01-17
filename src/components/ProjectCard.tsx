@@ -6,15 +6,14 @@ type ProjectCardProps = {
   project: Project;
 };
 
-const githubHref = "https://github.com";
-
 export default function ProjectCard({ project }: ProjectCardProps) {
   const previewImage = project.images[0] ?? "/images/projects/default.jpg";
+  const destination = project.projectUrl || "https://github.com";
 
   return (
     <div className="mx-auto my-8 w-full max-w-4xl">
       <Link
-        href={githubHref}
+        href={destination}
         target="_blank"
         rel="noreferrer"
         className="block"

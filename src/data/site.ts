@@ -17,7 +17,6 @@ export type Project = {
   description: string;
   tech: string[];
   images: string[];
-  githubUrl: string;
   projectUrl: string;
 };
 
@@ -120,8 +119,7 @@ export const projects = [
     images: [
       "/images/projects/buildbane.jpg",
     ],
-    githubUrl: "",
-    projectUrl: "",
+    projectUrl: "https://www.buildbane.com/",
   },
   {
     name: "Linguistify",
@@ -131,8 +129,7 @@ export const projects = [
     images: [
       "/images/projects/linguistify.jpg",
     ],
-    githubUrl: "/",
-    projectUrl: "/",
+    projectUrl: "https://github.com/jasunsjs/linguistify",
   },
   {
     name: "Biquadris",
@@ -142,8 +139,7 @@ export const projects = [
     images: [
       "/images/projects/biquadris.jpg",
     ],
-    githubUrl: "/",
-    projectUrl: "/",
+    projectUrl: "https://github.com/jasunsjs/biquadris",
   },
 ] satisfies Project[];
 
