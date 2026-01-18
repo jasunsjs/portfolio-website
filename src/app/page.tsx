@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Icons } from "@/components/icons";
+import Reveal from "@/components/Reveal";
 import WorkTimeline from "@/components/WorkTimeline";
 import ProjectCard from "@/components/ProjectCard";
 import SectionHeading from "@/components/SectionHeading";
@@ -48,10 +49,8 @@ export default function Home() {
         className="bg-(--color-secondary) px-[10vw] py-14 text-left"
       >
         <div className="mx-auto grid w-full max-w-6xl items-start gap-15 md:grid-cols-[minmax(0,1fr)_minmax(0,1fr)]">
-          <div className="space-y-5">
-            <SectionHeading className="text-left text-white">
-              About Me
-            </SectionHeading>
+          <Reveal className="space-y-5">
+            <SectionHeading className="text-left text-white">About Me</SectionHeading>
             <p className="text-sm text-foreground md:text-base">
               {`I'm a CS + AI student at UWaterloo and a passionate software engineer with 3+ years
                 of experience. I love learning new tools and technologies to develop
@@ -67,9 +66,9 @@ export default function Home() {
               {`But I'm curious about just anything in this world today that's full of wonder. 
                 So let's connect - we'll certainly have something in common.`}
             </p>
-          </div>
+          </Reveal>
           <div className="grid gap-4 md:grid-cols-2">
-            <div className="overflow-hidden rounded-lg border-(--color-subtext-soft)">
+            <Reveal className="overflow-hidden rounded-lg border-(--color-subtext-soft)">
               <Image
                 src="/images/aboutme/about_me1.jpg"
                 alt="About me photo 1"
@@ -78,8 +77,8 @@ export default function Home() {
                 sizes="(max-width: 768px) 100vw, 320px"
                 className="h-auto w-full"
               />
-            </div>
-            <div className="overflow-hidden rounded-lg border-(--color-subtext-soft)">
+            </Reveal>
+            <Reveal className="overflow-hidden rounded-lg border-(--color-subtext-soft)">
               <Image
                 src="/images/aboutme/about_me2.jpg"
                 alt="About me photo 2"
@@ -88,7 +87,7 @@ export default function Home() {
                 sizes="(max-width: 768px) 100vw, 320px"
                 className="h-auto w-full"
               />
-            </div>
+            </Reveal>
           </div>
         </div>
       </section>
@@ -96,10 +95,14 @@ export default function Home() {
       <WorkTimeline />
 
       <section id="projects" className="px-6 py-10">
-        <SectionHeading>{siteConfig.headings.projectsHomePage}</SectionHeading>
+        <Reveal>
+          <SectionHeading>{siteConfig.headings.projectsHomePage}</SectionHeading>
+        </Reveal>
         <div className="mt-8">
           {projects.slice(0, 3).map((project) => (
-            <ProjectCard key={project.name} project={project} />
+            <Reveal key={project.name}>
+              <ProjectCard project={project} />
+            </Reveal>
           ))}
         </div>
         <div className="pb-8 text-center">
@@ -118,16 +121,16 @@ export default function Home() {
         id="contact"
         className="bg-(--color-footer) px-[22vw] pb-55 pt-16"
       >
-        <div className="mx-auto flex w-full max-w-6xl flex-col items-center gap-6 text-center">
+        <Reveal className="mx-auto flex w-full max-w-6xl flex-col items-center gap-6 text-center">
           <SectionHeading className="text-white text-5xl">
             {siteConfig.headings.contact}
           </SectionHeading>
           <p className="text-sm text-foreground md:text-base">
             Let's do something cool.
           </p>
-        </div>
+        </Reveal>
         <div className="mt-10 grid gap-6 md:grid-cols-[1fr_0.6fr]">
-          <div className="space-y-6 text-base text-foreground md:text-base">
+          <Reveal className="space-y-6 text-base text-foreground md:text-base">
             <div className="flex items-center gap-5">
               <Icons.mail className="h-8 w-8" />
               {siteConfig.contact.email}
@@ -140,9 +143,9 @@ export default function Home() {
               <Icons.location className="h-8 w-8" />
               {siteConfig.contact.location}
             </div>
-          </div>
+          </Reveal>
           <div className="space-y-10 text-center">
-            <div>
+            <Reveal>
               <p className="text-sm font-semibold uppercase tracking-[0.2em] text-foreground">
                 Follow Me On Socials
               </p>
@@ -175,8 +178,8 @@ export default function Home() {
                   <Icons.instagram className="h-12 w-12" />
                 </a>
               </div>
-            </div>
-            <div>
+            </Reveal>
+            <Reveal>
               <p className="text-sm font-semibold uppercase tracking-[0.2em] text-foreground">
                 Check Out My Music
               </p>
@@ -200,7 +203,7 @@ export default function Home() {
                   <Icons.youtube className="h-12 w-12" />
                 </a>
               </div>
-            </div>
+            </Reveal>
           </div>
         </div>
       </section>
