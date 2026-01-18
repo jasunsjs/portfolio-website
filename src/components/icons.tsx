@@ -62,4 +62,12 @@ export const Icons = {
       <path d="M8.59 16.59 10 18l6-6-6-6-1.41 1.41L12.17 12z" />
     </svg>
   ),
+  arrowDown: (props: SVGProps<SVGSVGElement>) => (
+    <svg viewBox="0 0 16 16" aria-hidden="true" fill="currentColor" {...props}>
+      <path
+        fillRule="evenodd"
+        d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"
+      />
+    </svg>
+  ),
 };

@@ -34,9 +34,9 @@ export const siteConfig = {
   greeting: {
     title: "Hey, it's Jason.",
     subtitles: [
-      "I'm a software engineer.",
-      "I'm a saxophonist/musician.",
-      "I'm a basketball player.",
+      "Software Engineer.",
+      "Saxophonist/Musician.",
+      "Basketball Player.",
     ],
   },
   contact: {

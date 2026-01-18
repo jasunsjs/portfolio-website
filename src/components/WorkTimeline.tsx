@@ -8,7 +8,7 @@ export default function WorkTimeline() {
 
   return (
     <section id="experience" className="py-12 scroll-mt-28">
-      <div className="mx-auto w-full max-w-6xl px-6">
+      <div className="mx-auto w-full max-w-4xl">
         <SectionHeading>{siteConfig.headings.experience}</SectionHeading>
         <div className="relative mt-10 pl-6">
           <div className="absolute left-4 top-0 h-full w-px bg-(--color-subtext-soft)" />
@@ -18,7 +18,7 @@ export default function WorkTimeline() {
                 key={`${item.company}-${index}`}
                 className="relative ml-10"
               >
-                <div className="rounded-2xl border border-(--color-subtext-soft) bg-background p-6 shadow-(--shadow-soft)">
+                <div className="rounded-2xl border border-(--color-subtext-soft) bg-background p-6 shadow-(--shadow-soft) transition duration-200 hover:scale-[1.02]">
                   <p className="text-xs font-semibold uppercase tracking-[0.3em] text-(--color-tertiary)">
                     {item.time}
                   </p>

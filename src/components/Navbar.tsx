@@ -1,9 +1,32 @@
 "use client";
 
-import { useCallback } from "react";
+import { useCallback, useEffect, useRef } from "react";
 import { navigation, siteConfig } from "@/data/site";
 
 export default function Navbar() {
+  const headerRef = useRef<HTMLElement | null>(null);
+
+  useEffect(() => {
+    if (!headerRef.current) {
+      return;
+    }
+
+    const updateNavHeight = () => {
+      if (!headerRef.current) {
+        return;
+      }
+      const { height } = headerRef.current.getBoundingClientRect();
+      document.documentElement.style.setProperty("--nav-height", `${height}px`);
+    };
+
+    updateNavHeight();
+
+    const observer = new ResizeObserver(() => updateNavHeight());
+    observer.observe(headerRef.current);
+
+    return () => observer.disconnect();
+  }, []);
+
   const handleAnchorClick = useCallback(
     (event: React.MouseEvent<HTMLAnchorElement>, href: string) => {
       if (!href.startsWith("#")) {
@@ -12,8 +35,14 @@ export default function Navbar() {
 
       event.preventDefault();
       const target = document.querySelector(href);
+      const headerHeight = headerRef.current
+        ? headerRef.current.getBoundingClientRect().height
+        : 0;
+
       if (target) {
-        target.scrollIntoView({ behavior: "smooth", block: "start" });
+        const targetTop = target.getBoundingClientRect().top + window.scrollY;
+        const nextTop = Math.max(targetTop - headerHeight, 0);
+        window.scrollTo({ top: nextTop, behavior: "smooth" });
       } else {
         window.scrollTo({ top: 0, behavior: "smooth" });
       }
@@ -22,7 +51,10 @@ export default function Navbar() {
   );
 
   return (
-    <header className="sticky top-0 z-50 w-full bg-(--color-secondary-translucent) shadow-(--shadow-soft) backdrop-blur">
+    <header
+      ref={headerRef}
+      className="sticky top-0 z-50 w-full bg-(--color-secondary-translucent) shadow-(--shadow-soft) backdrop-blur animate-nav-drop"
+    >
       <div className="mx-auto flex w-full max-w-6xl flex-col gap-3 px-6 py-4 md:flex-row md:items-center md:justify-between">
         <div className="flex items-baseline justify-between gap-6">
           <a

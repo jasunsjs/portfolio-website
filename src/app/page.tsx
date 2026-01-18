@@ -11,16 +11,16 @@ export default function Home() {
     <div>
       <section
         id="top"
-        className="relative flex min-h-[90vh] items-center justify-center bg-(--color-secondary) px-[10vw] text-center scroll-mt-28"
+        className="relative flex min-h-[90vh] items-center justify-center bg-(--color-secondary) px-[10vw] text-center"
       >
         <div
-          className="absolute inset-0 bg-[url('/images/background2.jpg')] bg-cover bg-center opacity-30"
+          className="animate-hero-bg absolute inset-0 bg-[url('/images/background.webp')] bg-cover bg-center"
           aria-hidden
         />
         <div className="relative z-10 flex max-w-3xl flex-col items-center gap-6 text-center">
           <h1
             className="animate-fade-up font-serif text-4xl text-foreground md:text-6xl"
-            style={{ animationDelay: "0.05s" }}
+            style={{ animationDelay: "1.2s" }}
           >
             {siteConfig.greeting.title}
           </h1>
@@ -30,7 +30,7 @@ export default function Home() {
                 <p
                   key={`${subtitle}-${index}`}
                   className="animate-fade-up text-base text-foreground md:text-xl"
-                  style={{ animationDelay: `${1 + index * 1}s` }}
+                  style={{ animationDelay: `${2 + index * 0.5}s` }}
                 >
                   {subtitle}
                 </p>
@@ -38,11 +38,14 @@ export default function Home() {
             )}
           </div>
         </div>
+        <div className="absolute bottom-9">
+          <Icons.arrowDown className="float-arrow h-7 w-7" />
+        </div>
       </section>
 
       <section
         id="about"
-        className="bg-(--color-secondary) px-[10vw] py-14 text-left scroll-mt-28"
+        className="bg-(--color-secondary) px-[10vw] py-14 text-left"
       >
         <div className="mx-auto grid w-full max-w-6xl items-start gap-15 md:grid-cols-[minmax(0,1fr)_minmax(0,1fr)]">
           <div className="space-y-5">
@@ -92,7 +95,7 @@ export default function Home() {
 
       <WorkTimeline />
 
-      <section id="projects" className="px-6 py-10 scroll-mt-28">
+      <section id="projects" className="px-6 py-10">
         <SectionHeading>{siteConfig.headings.projectsHomePage}</SectionHeading>
         <div className="mt-8">
           {projects.slice(0, 3).map((project) => (
@@ -104,16 +107,16 @@ export default function Home() {
             href="https://github.com/jasunsjs"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center justify-center rounded-lg bg-(--color-contrast) px-8 py-2 text-sm text-(--color-contrast) transition hover:-translate-y-1"
+            className="inline-flex items-center justify-center rounded-lg bg-(--color-accent) px-8 py-2 text-sm text-(--color-subtext) transition hover:scale-105"
           >
-            {siteConfig.cta.work} <span className="ml-2">&gt;</span>
+            {siteConfig.cta.work}
           </Link>
         </div>
       </section>
 
       <section
         id="contact"
-        className="bg-(--color-secondary) px-[22vw] pb-55 pt-16 scroll-mt-28"
+        className="bg-(--color-footer) px-[22vw] pb-55 pt-16"
       >
         <div className="mx-auto flex w-full max-w-6xl flex-col items-center gap-6 text-center">
           <SectionHeading className="text-white text-5xl">
@@ -148,7 +151,7 @@ export default function Home() {
                   href="https://www.linkedin.com/in/jason-sun0/"
                   target="_blank"
                   rel="noreferrer"
-                  className="text-foreground transition hover:text-(--color-tertiary)"
+                  className="text-foreground transition duration-200 ease-out hover:scale-110"
                   aria-label="LinkedIn"
                 >
                   <Icons.linkedin className="h-12 w-12" />
@@ -157,7 +160,7 @@ export default function Home() {
                   href="https://github.com/jasunsjs"
                   target="_blank"
                   rel="noreferrer"
-                  className="text-foreground transition hover:text-(--color-tertiary)"
+                  className="text-foreground transition duration-200 ease-out hover:scale-110"
                   aria-label="GitHub"
                 >
                   <Icons.github className="h-12 w-12" />
@@ -166,7 +169,7 @@ export default function Home() {
                   href="https://www.instagram.com/sjs.jasun/"
                   target="_blank"
                   rel="noreferrer"
-                  className="text-foreground transition hover:text-(--color-tertiary)"
+                  className="text-foreground transition duration-200 ease-out hover:scale-110"
                   aria-label="Instagram"
                 >
                   <Icons.instagram className="h-12 w-12" />
@@ -182,7 +185,7 @@ export default function Home() {
                   href="https://www.instagram.com/jasunsaxmusic/"
                   target="_blank"
                   rel="noreferrer"
-                  className="text-foreground transition hover:text-(--color-tertiary)"
+                  className="text-foreground transition duration-200 ease-out hover:scale-110"
                   aria-label="Instagram"
                 >
                   <Icons.instagram className="h-12 w-12" />
@@ -191,7 +194,7 @@ export default function Home() {
                   href="https://www.youtube.com/@sjsjasun"
                   target="_blank"
                   rel="noreferrer"
-                  className="text-foreground transition hover:text-(--color-tertiary)"
+                  className="text-foreground transition duration-200 ease-out hover:scale-110"
                   aria-label="YouTube"
                 >
                   <Icons.youtube className="h-12 w-12" />
