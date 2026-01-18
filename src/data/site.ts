@@ -20,14 +20,6 @@ export type Project = {
   projectUrl: string;
 };
 
-export type Blog = {
-  title: string;
-  description: string;
-  href: string;
-  image: string;
-  tags: string[];
-};
-
 export const siteConfig = {
   name: "Jason Sun",
   logoText: "Jason Sun",
@@ -98,9 +90,6 @@ export const siteConfig = {
       },
     ] satisfies ExperienceItem[],
   },
-  blogs: {
-    visible: true,
-  },
 };
 
 export const navigation = [
@@ -142,38 +131,3 @@ export const projects = [
     projectUrl: "https://github.com/jasunsjs/biquadris",
   },
 ] satisfies Project[];
-
-export const blogs = [
-  {
-    title: "Blog Title",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum",
-    href: "https://www.google.com",
-    image: "/images/projects/blog.jpg",
-    tags: ["jim", "pam", "dwight"],
-  },
-  {
-    title: "Blog Title",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum",
-    href: "https://www.google.com",
-    image: "/images/projects/blog.jpg",
-    tags: ["jim", "pam", "dwight"],
-  },
-  {
-    title: "Blog Title",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum",
-    href: "https://www.google.com",
-    image: "/images/projects/blog.jpg",
-    tags: ["jim", "pam", "dwight"],
-  },
-  {
-    title: "Blog Title",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum",
-    href: "https://www.google.com",
-    image: "/images/projects/blog.jpg",
-    tags: ["jim", "pam", "dwight"],
-  },
-] satisfies Blog[];
