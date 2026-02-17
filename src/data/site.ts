@@ -1,9 +1,3 @@
-export type SocialLink = {
-  label: string;
-  href: string;
-  icon: "github" | "linkedin" | "medium" | "twitter" | "mail" | "phone";
-};
-
 export type ExperienceItem = {
   company: string;
   companyLogo: string;
@@ -37,16 +31,11 @@ export const siteConfig = {
     countryCode: "+1",
     location: "Toronto, ON, Canada",
   },
-  socials: [
-    { label: "GitHub", href: "https://github.com/jasunsjs", icon: "github" },
-    { label: "LinkedIn", href: "https://www.linkedin.com/in/jason-sun0/", icon: "linkedin" },
-  ] satisfies SocialLink[],
   about: {
     resumeUrl: "/",
   },
   headings: {
     projectsHomePage: "Projects",
-    projectsMainPage: "Projects",
     about: "About Me",
     education: "Education",
     experience: "Experiences",
