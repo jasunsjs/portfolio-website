@@ -1,9 +1,3 @@
-export type SocialLink = {
-  label: string;
-  href: string;
-  icon: "github" | "linkedin" | "medium" | "twitter" | "mail" | "phone";
-};
-
 export type ExperienceItem = {
   company: string;
   companyLogo: string;
@@ -24,7 +18,7 @@ export const siteConfig = {
   name: "Jason Sun",
   logoText: "Jason Sun",
   greeting: {
-    title: "Hey, it's Jason.",
+    title: "Hey, I'm Jason.",
     subtitles: [
       "Software Engineer.",
       "Saxophonist/Musician.",
@@ -37,34 +31,32 @@ export const siteConfig = {
     countryCode: "+1",
     location: "Toronto, ON, Canada",
   },
-  socials: [
-    { label: "GitHub", href: "https://github.com/jasunsjs", icon: "github" },
-    { label: "LinkedIn", href: "https://www.linkedin.com/in/jason-sun0/", icon: "linkedin" },
-  ] satisfies SocialLink[],
   about: {
     resumeUrl: "/",
   },
   headings: {
     projectsHomePage: "Projects",
-    projectsMainPage: "Projects",
     about: "About Me",
     education: "Education",
     experience: "Experiences",
     contact: "Contact Me",
   },
-  cta: {
-    landing: "My work",
-    work: "View All",
-    resume: "Resume",
-    submit: "Submit",
-  },
   experience: {
     visible: true,
     items: [
       {
+        company: "Zanbato",
+        companyLogo:
+          "",
+        position: "Software Engineer",
+        time: "May 2026",
+        description:
+          "Incoming SWE intern for Summer 2026",
+      },
+      {
         company: "Zomp Inc.",
         companyLogo:
-          "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/why-did-steve-carell-leave-the-office-1585597666.jpg?crop=0.563xw:0.844xh;0.287xw,0.128xh&resize=480:*",
+          "",
         position: "Software Engineer",
         time: "Sep 2025 - Dec 2025",
         description:
@@ -73,7 +65,7 @@ export const siteConfig = {
       {
         company: "Sparklease Inc.",
         companyLogo:
-          "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/why-did-steve-carell-leave-the-office-1585597666.jpg?crop=0.563xw:0.844xh;0.287xw,0.128xh&resize=480:*",
+          "",
         position: "Full Stack Developer",
         time: "Jan 2025 - Apr 2025",
         description:
@@ -82,7 +74,7 @@ export const siteConfig = {
       {
         company: "Home Hardware Stores Limited",
         companyLogo:
-          "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/why-did-steve-carell-leave-the-office-1585597666.jpg?crop=0.563xw:0.844xh;0.287xw,0.128xh&resize=480:*",
+          "",
         position: "Software Developer",
         time: "May 2024 - Aug 2024",
         description:
