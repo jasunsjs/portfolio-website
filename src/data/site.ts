@@ -41,12 +41,6 @@ export const siteConfig = {
     experience: "Experiences",
     contact: "Contact Me",
   },
-  cta: {
-    landing: "My work",
-    work: "View All",
-    resume: "Resume",
-    submit: "Submit",
-  },
   experience: {
     visible: true,
     items: [

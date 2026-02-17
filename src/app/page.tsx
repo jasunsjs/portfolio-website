@@ -112,7 +112,7 @@ export default function Home() {
             rel="noopener noreferrer"
             className="inline-flex items-center justify-center rounded-lg bg-(--color-accent) px-8 py-2 text-sm text-(--color-subtext) transition hover:scale-105"
           >
-            {siteConfig.cta.work}
+            View All
           </Link>
         </div>
       </section>
