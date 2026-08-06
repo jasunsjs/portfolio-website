@@ -52,7 +52,7 @@ export default function Home() {
           <Reveal className="space-y-5">
             <SectionHeading className="text-left text-white">About Me</SectionHeading>
             <p className="text-sm text-foreground md:text-base">
-              {`I'm a CS + AI student at UWaterloo and a passionate software engineer with 3+ years
+              {`I'm a CS student at UWaterloo and a passionate software engineer with 3+ years
                 of experience. I love learning new tools and technologies to develop
                 cool things in any field - web, backend, AI/ML, Cloud, etc.`}
             </p>

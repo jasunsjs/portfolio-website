@@ -45,13 +45,13 @@ export const siteConfig = {
     visible: true,
     items: [
       {
-        company: "Zanbato",
+        company: "Zanbato Inc.",
         companyLogo:
           "",
         position: "Software Engineer",
-        time: "May 2026",
+        time: "May 2026 - Present",
         description:
-          "Incoming SWE intern for Summer 2026",
+          "Internal and LP tools for private market SPV fund services and the ZX alternate trading platform.",
       },
       {
         company: "Zomp Inc.",
@@ -60,7 +60,7 @@ export const siteConfig = {
         position: "Software Engineer",
         time: "Sep 2025 - Dec 2025",
         description:
-          "Worked on oil/gas pipeline analytics software & AWS internal pipeline tools",
+          "Oil/gas pipeline inspection analytics algorithms for modeling defect patterns & AWS internal pipeline tools",
       },
       {
         company: "Sparklease Inc.",
@@ -69,7 +69,7 @@ export const siteConfig = {
         position: "Full Stack Developer",
         time: "Jan 2025 - Apr 2025",
         description:
-          "Developed end-to-end features for an online automotive marketplace & built ETL pipelines",
+          "Vehicle discovery and listing features for an online automotive marketplace & ETL pipelines",
       },
       {
         company: "Home Hardware Stores Limited",
@@ -78,7 +78,7 @@ export const siteConfig = {
         position: "Software Developer",
         time: "May 2024 - Aug 2024",
         description:
-          "Automated test suites & Python internal tools to support ERP system workflows",
+          "Automated test suites & Python internal data analytics tools to support ERP system workflows",
       },
     ] satisfies ExperienceItem[],
   },
@@ -98,9 +98,19 @@ export const projects = [
       "A platform  that connects entrepreneurs with builders to collaborate on projects and kickstart ideas.",
     tech: ["Next.js", "TypeScript", "GraphQL", "PostgreSQL", "Prisma ORM", "Redis", "Firebase"],
     images: [
-      "/images/projects/buildbane.jpg",
+      "/images/projects/buildbane.png",
     ],
     projectUrl: "https://www.buildbane.com/",
+  },
+  {
+    name: "MarketLens",
+    description:
+      "A real-time AI stock analytics mobile app monitoring your portfolio with custom alert notifications for price movements.",
+    tech: ["Kotlin", "TypeScript", "Supabase"],
+    images: [
+      "/images/projects/marketlens.png",
+    ],
+    projectUrl: "https://github.com/jasunsjs/marketlens",
   },
   {
     name: "Linguistify",
@@ -108,18 +118,8 @@ export const projects = [
       "AI-powered audio dubbing application using TTS/STT and AI contextual translations to synchronize audio tracks into different languages.",
     tech: ["React", "JavaScript", "Python", "Flask"],
     images: [
-      "/images/projects/linguistify.jpg",
+      "/images/projects/linguistify.png",
     ],
     projectUrl: "https://github.com/jasunsjs/linguistify",
-  },
-  {
-    name: "Biquadris",
-    description:
-      "A Tetris-inspired multiplayer game engine with a twist - different levels, special blocks and effects, and unique rotation mechanics.",
-    tech: ["C++"],
-    images: [
-      "/images/projects/biquadris.jpg",
-    ],
-    projectUrl: "https://github.com/jasunsjs/biquadris",
   },
 ] satisfies Project[];
