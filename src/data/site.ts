@@ -1,6 +1,7 @@
 export type ExperienceItem = {
   company: string;
   companyLogo: string;
+  companyUrl: string;
   position: string;
   time: string;
   description: string;
@@ -34,6 +35,16 @@ export const siteConfig = {
   about: {
     resumeUrl: "/",
   },
+  footer: {
+    copyrightName: "Jason Sun",
+    copyrightYear: "2025",
+    currentJam: {
+      label: "Current Jam:",
+      song: "Pink + White",
+      artist: "Frank Ocean",
+      url: "https://open.spotify.com/track/3xKsf9qdS1CyvXSMEid6g8",
+    },
+  },
   headings: {
     projectsHomePage: "Projects",
     about: "About Me",
@@ -48,15 +59,27 @@ export const siteConfig = {
         company: "Zanbato Inc.",
         companyLogo:
           "",
+        companyUrl: "https://www.zanbato.com/",
         position: "Software Engineer",
-        time: "May 2026 - Present",
+        time: "May 2026 - Aug 2026",
         description:
-          "Internal and LP tools for private market SPV fund services and the ZX alternate trading platform.",
+          "Internal and LP tools for private market SPV fund services and the ZX alternate trading platform",
+      },
+      {
+        company: "8VC Fellowship",
+        companyLogo:
+          "",
+        companyUrl: "https://8vc.com/fellowships",
+        position: "Engineering Fellow",
+        time: "May 2026 - Aug 2026",
+        description:
+          "1 of 40 fellows from 1K+ applicants to connect with VCs and high-growth startups in the SF Bay Area and NYC",
       },
       {
         company: "Zomp Inc.",
         companyLogo:
           "",
+        companyUrl: "",
         position: "Software Engineer",
         time: "Sep 2025 - Dec 2025",
         description:
@@ -66,7 +89,8 @@ export const siteConfig = {
         company: "Sparklease Inc.",
         companyLogo:
           "",
-        position: "Full Stack Developer",
+        companyUrl: "https://www.sparklease.com/",
+        position: "Full Stack Engineer",
         time: "Jan 2025 - Apr 2025",
         description:
           "Vehicle discovery and listing features for an online automotive marketplace & ETL pipelines",
@@ -75,6 +99,7 @@ export const siteConfig = {
         company: "Home Hardware Stores Limited",
         companyLogo:
           "",
+        companyUrl: "",
         position: "Software Developer",
         time: "May 2024 - Aug 2024",
         description:

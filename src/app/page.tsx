@@ -12,7 +12,7 @@ export default function Home() {
     <div>
       <section
         id="top"
-        className="relative flex min-h-[90vh] items-center justify-center bg-(--color-secondary) px-[10vw] text-center"
+        className="hero-band relative flex items-center justify-center bg-(--color-secondary) px-[10vw] text-center"
       >
         <div
           className="animate-hero-bg absolute inset-0 bg-[url('/images/background.webp')] bg-cover bg-center"
@@ -119,14 +119,14 @@ export default function Home() {
 
       <section
         id="contact"
-        className="bg-(--color-footer) px-[22vw] pb-55 pt-16"
+        className="contact-band bg-(--color-footer) px-6 pb-16 pt-12 md:px-[12vw] lg:px-[22vw]"
       >
         <Reveal className="mx-auto flex w-full max-w-6xl flex-col items-center gap-6 text-center">
           <SectionHeading className="text-white text-5xl">
             {siteConfig.headings.contact}
           </SectionHeading>
           <p className="text-sm text-foreground md:text-base">
-            Let's do something cool.
+            Let's run it up.
           </p>
         </Reveal>
         <div className="mt-10 grid gap-6 md:grid-cols-[1fr_0.6fr]">
