@@ -56,17 +56,17 @@ export const siteConfig = {
     visible: true,
     items: [
       {
-        company: "Zanbato Inc.",
+        company: "Zanbato",
         companyLogo:
           "",
         companyUrl: "https://www.zanbato.com/",
-        position: "Software Engineer",
+        position: "Software Engineer Intern",
         time: "May 2026 - Aug 2026",
         description:
-          "Internal and LP tools for private market SPV fund services and the ZX alternate trading platform",
+          "Private market fund services (SpaceX post-IPO distributions) & ZX Alternative Trading System",
       },
       {
-        company: "8VC Fellowship",
+        company: "8VC",
         companyLogo:
           "",
         companyUrl: "https://8vc.com/fellowships",
@@ -76,31 +76,31 @@ export const siteConfig = {
           "1 of 40 fellows from 1K+ applicants to connect with VCs and high-growth startups in the SF Bay Area and NYC",
       },
       {
-        company: "Zomp Inc.",
+        company: "Zomp",
         companyLogo:
           "",
         companyUrl: "",
-        position: "Software Engineer",
+        position: "Software Engineer Intern",
         time: "Sep 2025 - Dec 2025",
         description:
-          "Oil/gas pipeline inspection analytics algorithms for modeling defect patterns & AWS internal pipeline tools",
+          "Oil/gas pipeline inspection analytics algorithms for modeling defect patterns & AWS internal tools",
       },
       {
-        company: "Sparklease Inc.",
+        company: "Sparklease",
         companyLogo:
           "",
         companyUrl: "https://www.sparklease.com/",
-        position: "Full Stack Engineer",
+        position: "Full Stack Engineer Intern",
         time: "Jan 2025 - Apr 2025",
         description:
-          "Vehicle discovery and listing features for an online automotive marketplace & ETL pipelines",
+          "Vehicle filter/search & ETL pipelines for an automotive e-marketplace",
       },
       {
         company: "Home Hardware Stores Limited",
         companyLogo:
           "",
         companyUrl: "",
-        position: "Software Developer",
+        position: "Software Engineer Intern",
         time: "May 2024 - Aug 2024",
         description:
           "Automated test suites & Python internal data analytics tools to support ERP system workflows",
